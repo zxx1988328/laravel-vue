@@ -32,15 +32,23 @@ npm install
 
 填充测试数据
 ```
-首先要创建数据库，根据自己的配置创建
+首先要创建数据库，
+php artisan migrate
+
+根据自己的配置创建
 php artisan db:seed
 ```
 
 # 运行 
 ```
 gulp  // 打包前端资源
-php artisan  // 开启 web 服务
+
+生成key
+php artisan key:generate  
+
+php artisan serve // 开启 web 服务
 ```
 
 打开浏览器访问 http://localhost:8000 查看效果
+
 
